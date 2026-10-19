@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* HEADER */
 .header {
   width: 100%;
   background: #fff;
@@ -74,7 +73,6 @@
   cursor: pointer;
 }
 
-/* HERO */
 .hero {
   width: 94%;
   max-width: 1600px;
@@ -90,7 +88,6 @@
   position: relative;
 }
 
-/* HERO MATNI */
 .hero-content {
   position: relative;
   z-index: 3;
@@ -130,7 +127,6 @@
   padding-left: 40px;
 }
 
-/* QIDIRUV */
 .search-box {
   width: 100%;
   max-width: 525px;
@@ -186,8 +182,6 @@
   background: #1d1d1d;
   border-radius: 220px 220px 0 0;
 }
-
-/* MUHIM: RASMNI QORAYTIRUVCHI FILTRLARNI ISHLATMA */
 
 .hero-visual {
   position: relative;
@@ -410,4 +404,409 @@
 }
 .money {
   margin-left: 50px;
+}
+.about {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about h2 {
+  font-size: 30px;
+  color: #222;
+}
+
+.subtitle {
+  color: #999;
+  margin-top: 18px;
+  font-size: 17px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.about-box {
+  width: 33.33%;
+}
+
+.about-img {
+  width: 88px;
+  height: 88px;
+  background-color: #c3dddd;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.about-box h3 {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  color: #999;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-box {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.categories {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: white;
+}
+
+.categories-title {
+  padding: 16px 10px 68px;
+}
+
+.categories-title h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 13px;
+}
+
+.categories-title p {
+  color: #888;
+  font-size: 15px;
+}
+
+.categories-bg {
+  background: #c3dddd;
+  padding: 0 6% 70px;
+}
+
+.categories-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  position: relative;
+  top: -35px;
+}
+
+.categories-card {
+  width: 31%;
+}
+
+.categories-card img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+}
+
+.categories-card h3 {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #222;
+}
+
+.categories-card.middle {
+  margin-top: 69px;
+}
+
+.categories-card.middle img {
+  height: 369px;
+}
+
+.categories-card.middle p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 12px 0 18px;
+}
+
+.categories-card a {
+  display: inline-block;
+  background: white;
+  color: #222;
+  padding: 11px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.categories-card a span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+/* Telefon uchun */
+@media (max-width: 768px) {
+  .categories-title {
+    padding-bottom: 55px;
+  }
+
+  .categories-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .categories-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .categories-card.middle {
+    margin-top: 0;
+  }
+
+  .categories-card img,
+  .categories-card.middle img {
+    height: 350px;
+  }
+}
+
+.reviews {
+  background: #fff;
+  padding: 60px 6% 145px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.reviews-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.reviews-top h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  color: #111;
+}
+
+.review-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-dots span {
+  width: 8px;
+  height: 4px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.review-dots .active {
+  width: 30px;
+  background: #c3dddd;
+}
+
+.reviews-list {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reviews-list::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 63%;
+  min-height: 208px;
+  background: #c3dddd;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-text {
+  color: #444;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.review-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.person img {
+  width: 50px;
+  height: 65px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.person h4 {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.person p {
+  font-size: 10px;
+  color: #777;
+}
+
+.rating {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.rating span {
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background: #c3dddd;
+  padding: 32px 6% 30px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left h3 {
+  font-size: 14px;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.footer-left > p {
+  color: #718383;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.socials a {
+  width: 31px;
+  height: 31px;
+  border: 1px solid #91aaaa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #526565;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 45px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-links h4 {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.footer-links a {
+  color: #718383;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #222;
+}
+
+.copyright {
+  color: #718383;
+  font-size: 12px;
+  margin-top: 65px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .reviews {
+    padding: 40px 5% 70px;
+  }
+
+  .reviews-top h2 {
+    font-size: 19px;
+  }
+
+  .review-card {
+    flex-basis: 90%;
+    padding: 22px;
+  }
+
+  .review-text {
+    font-size: 12px;
+  }
+
+  .person {
+    gap: 12px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .footer-links div {
+    gap: 15px;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    line-height: 1.6;
+  }
 }
